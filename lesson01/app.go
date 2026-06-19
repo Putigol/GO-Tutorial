@@ -1,17 +1,11 @@
 package main
 
-import (
-	"bufio"
-	"fmt"
-	"os"
-)
+import "fmt"
+
+const deliciousDish="Bánh mì"
 func main() {
-	var hoten string;
-	fmt.Print("Nhap ho va ten: ");
-	//fmt.Scanln(&hoten);
-	scanner := bufio.NewScanner(os.Stdin);
-	if (scanner.Scan()) {
-	hoten = scanner.Text();
-	}
-	fmt.Println("Xin chao: ", hoten);
+	//Hằng số không thể ghi đè trong cùng 1 phạm vi
+	const deliciousDish="Cơm tấm"
+	fmt.Println("Món ngon nhất là: ",deliciousDish)
+
 }
